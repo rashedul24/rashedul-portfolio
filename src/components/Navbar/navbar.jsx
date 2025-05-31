@@ -10,6 +10,11 @@ const navbar = () => {
         </a>
       </li>
       <li>
+        <a className="text-xl" href="#about">
+          About
+        </a>
+      </li>
+      <li>
         <a className="text-xl" href="#skills">
           Skills
         </a>
@@ -19,11 +24,7 @@ const navbar = () => {
           Education
         </a>
       </li>
-      <li>
-        <a className="text-xl" href="#about">
-          About
-        </a>
-      </li>
+
       <li>
         <a className="text-xl" href="#projects">
           Projects
@@ -37,7 +38,7 @@ const navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm  sticky top-0 z-50 md:px-20 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,7 +69,7 @@ const navbar = () => {
         </div>
 
         {/* Logo */}
-        <a href="\" className="w-14">
+        <a href="\" className="w-14 ">
           <img src={logo} alt="" />
         </a>
       </div>
